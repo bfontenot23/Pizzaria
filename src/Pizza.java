@@ -13,6 +13,15 @@ public class Pizza {
     private ArrayList<String> toppings;
     private String name;
 
+    //default constructor
+    public Pizza()
+    {
+        this.size = PIZZASIZES.SMALL;
+        this.numSlices = 0;
+        this.toppings = new ArrayList<>();
+        this.name = "";
+    }
+
     public Pizza(PIZZASIZES size)
     {
         this.size = size;
